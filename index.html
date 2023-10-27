@@ -1,0 +1,205 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        
+         @font-face {
+            font-family: 'NombreDeTuFuente';
+            src: url('font/PalaceScriptMT.ttf') format('truetype'); /* Puedes tener diferentes formatos para mayor compatibilidad, como woff y woff2 */
+            /* Otras propiedades opcionales, como font-weight y font-style, pueden ir aquí */
+        }
+        .church {
+            width: 44px;
+            height: 44.01px;
+            top: 1794px;
+            left: 222px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAtCAYAAADV2ImkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPhSURBVHgB5ZlBctowFIbfM8kisCi9AbkBOUHQgrTTFT1BwwlaFg2TVcmqE7ogOQHpCcKq0ymZwZwg3CDuCcqiJJkm+PVJNrJNbGOCkhkm/0yCsSTrs/z8P0kgGNbg69sSWtOBPKabwo5o9cZgUBaYV0n/Ff6WwbAQDGnQqhWhcFu2wN0ll1ryHIHVAAtHcA+OOPzpgAFtgCHh1uQSXChR+By4HT4nn6PD/7fBgMyFBEIxrdCUjAHTNLdDCHUiONXn+Fidu8nvgCGZu3Vf7BIV7RIWCfH5wgaDegqXeFK9bGBpbRwOndl3JPwAhmXUh9naZOzOJQvs8UtXN5XxjAA/hEXH+6SSX2XEaVqYgF4ZOA6WXEuoI8sdmIZeCTgJdpaGvYmQWehHAy+C1fUMQz8KOCusrm8QemngZWF1O0PQSwE/Fla3NwCdGTgL7KBdLfMFOzwRrvhXt3lSVI/UWRE6E3AmWAmSm14y7Pw0c8wzNiEO+iMT0AtTc9YwYNhuAMvZDeC7X1RUox6SbOt59SzBQFn2oVYtqwAvFbNBGJxVmr/ei2Z/n0/2ImUGoFOBMT85D2D50WZ5wQiDDhFTH7GGRhhraK/PZKakgkGnUsR/m39Cp5xKs5+4LrPb1UF4lJm8yPA1/7tdOeiLxLbHe1eheJbbA6+T4jlxhEXD5hGFeujuU8Ux29B1CfZDsGPpFJBJHHJAjbSXLzUkxGH/jD9GkEHSBeS6To5m0D/bGhdlXuIjOaJ5cZJWxdgyX8oHE/CEegCs3tKt6wrc5G3T20xZpRjytzWYgj3/dCLAnqErGyvB1mTEDXm0JrCMBu137CpuGcgdA2444uBHppAKwyorJXYn3oBhpkhIYRR26sEGGqkapKwt1SWG7epHjtdWTKZzONMdcYyfJbXVLoG8rUVq76gcae/mNLQVCxvyRR82VXb7TZf7OYmBlSohQZdtr7voOgxb1rABg2KTjAp4HlamVNq82+YGmR7l8HjvCz/+fd0J+tnN+27rTMZWN/y214FsGtF1YTuU3jW0NQ8rU6ry4M07sQhaXoB9s+XTOWq7aroRbFUhHYXTL+9qfvJifAGsPxGSLBHo3PTcCsEOvfzvSUOD2nmMl+Xq+mS59Ti/9dKvGyQOuq8lXk/e9NysTTHNvJ3DUycORLh60BlDc2Un8fJIu7OO0vbQxKEs06GRPMIyccRYKRH+nh2b2fnhjrLWQYtewQp6YXtrhCV4Zq0GjPTsqXvVkFg74GcX2sfV2Q8/TmQuO5O3iiiBHE2E3uKy8EqD7JCdJV8HoOan9biycNsI8FrIInJPYU0U/oVqbfQfrNRxz62T5hcAAAAASUVORK5CYII=);
+            background-size: cover;
+            background-position: center;
+        }
+        .party {
+            width: 44px;
+            height: 44.01px;
+            top: 1794px;
+            left: 222px;
+            background-image: url(data:image/png;base64,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);
+            background-size: cover;
+            background-position: center;
+        }
+        .location {
+            width: 26px;
+            height: 26px;
+            top: 1867px;
+            left: 220px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALjSURBVHgBzVZNTttQEJ55Aakti/oI6QlqToAtNQh10+QEDSdAWYQIdZGwQgmLJCcATkC6qShFeuYE5AakJ2gWFZVI/KYzzwnYTpwfVoxk2Xlv3nzz872ZALxW0Sd7eXlgTcFlCrpRdGDrbxkJv/BPFwic2OmAAC4gzAX+0dXgxUC3rcIBG2pY4whDXuoR4W97EM1HIOUCUJ5/Dgjh2D/8db420G1zt05ADVYZkDH7/tFNME9PnxTKqLAugPxu7FSvj1cGegKR1DxslfxGbwgLRLc9B0cbZ0BYJFAVv/azsxRICo0qvLeR/Hu3nQbRrc8uoHH86lUwC7apOc0up3Gb09iP76sZ5FxYlzcZ5cdBpF5Bq/AHaXSHJtRBs3CvW4XydN+vBEMKc6WJ9+20XZX2ij0qs+Z5nEVikAg6nJohp7Qij5hDgjPd3C0+gckZTjfb8CxbMyN6zHk2GsLviSgBDiJScJS1m4488i1MRKR6XNfSXeTtg5cNBJiPXhsDSJ7mulDirsi3dUj24jKCfsLWfCAVhRuaWZYROuklBPN+Rk/lJmdpQeqQBtGqcVMWAz5Y1KefvOmSPt3jbyxKPSEp+YStiWwkVCTsaEWAetNlZtM+KqPRgGbmBbZTmNC1dQtV8oKqsRvdms1sevvfmPtRgXcS61IPLv6k0JwSdJiFXUuOVI9jLlri+Ic/+tkRWe+xi4rqkia/+tx2JgbLsEAiqksrgpnOMHNh4c1jx0ZlsA1rCgK1JRozVt2lQPaGj0ny7rKHDVhRpD/yK09gLuaNjMzuzUWXvuWRIj+ewnkiDJS2JNF4tesP83RU1mFhmhzkFF4umqi2CVN4Oe0cWXqZQJZpSCWJmbu5ngfGPdCVPesY6y6asplAFoxbPVNaeprDBu/i3Zpr8pV90LInOumxkJal/xms53ZGGR2NbezxrZcu79l0SSRLQJZGNJXkhSUZC669sDIYVwB5kcicSc+aVyX/AT1ha6N6CTrJAAAAAElFTkSuQmCC);
+            background-size: cover;
+            background-position: center;
+        }
+        .time {
+            width: 24px;
+            height: 24px;
+            top: 1906px;
+            left: 220px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgBxVVNchJREO4eEpXCBUeYGwRPkHklJCk3coPEEwCLEKMLhoUVgQXkBIYb4MayhKoZThC8Ad4AF1JKMa/tfsCI4WcmWFZ6A+9nvq//3tcA/9kw6oJXf5EBnDhIeMBL22wSjsjSfZjuddTl5+FOBF7jhEGDChA486tDQBrOj9O8n5kj+AT7JVX+NIhN0K8dNQmoKKCkdRt+PW0ptzP6y4GrExsgcNDCCodk8697eP6lGkng148/AOkzIriGnyn3LvDaaK+yriFCuHHK3VcbL7LnFb+WI6+WdeGeJiTybb9x1IR1EXj1XAYJbjk1VXXRc2EH894/byFaBbJIqfOeL3vWElNTcr4NvF/PFbzacXEjw+PAFQzuuMpiyxCYgnG3kKYqbDECyCPql5vOVckfkYa2YJn2XhCANc3PriR8+Fd7MmnNvAmckIDTcwiIg6hHE8ckCpMm1AchAYOnmTKyHWeGac/Np7dfMQ/S/kMQ02hKH4Eog8kft14j68T5xhAQ4TcujB11Wb3ptbgRlCQVNXpbOipNGr+HBABadMSODF1ILns+PZo8I9LXLBUr5/OOZIFEX9Z7ZnfKC/mXHItHbiSJKSSs9z7B3UPiM3bCCNTb7kBUEYFO40SxzVgNRJP8RUeGRabAPDLbSo0rsKOJlgkGB1Ba7IUEJrecVy5ikQXr3iQCzjrmGi0rd8PZsCLXXi13w5unm/R95T6n1EqOBbzInrfVRfds+XztwAn1HWBICFUIEv7dV26AU+MCRyyAtswP9bq7UvjNI/Mdy/c+K2w4MkEaYfbaCW2ZYnMEX+onKV6HEz30pa9ZDBFZrwAXHTYkoq/S68v5fhD7DZqDIjD/HQeGAAAAAElFTkSuQmCC);
+            background-size: cover;
+            background-position: center;
+        }
+        #ultimo + div{
+            visibility: hidden;
+        }
+    </style>
+
+    <title>Boda Carmen y Ariel</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="vW">Carmen & Ariel</h1>
+        <h1 class="vCP">Carmen<br>&<br>Ariel</h1>
+        <!--<img class="names" src="img/Carmen & Ariel.png" alt="names">-->
+        <br>
+        <h3>We´re getting married</h3>
+    </header>
+
+    <section id="inicio" class="seccion">
+        <div class="star"><img src="img/Star.png" alt="Star"></div>
+        <h2>SAVE THE DATE</h2>
+    </section>
+    <p class="dia">09/12/2023</p>
+    
+    <section class="countdown-section">
+        <div class="countdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span><br>
+                <span class="countdown-label">DÍAS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span><br>
+                <span class="countdown-label">HORAS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span><br>
+                <span class="countdown-label">MINUTOS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span><br>
+                <span class="countdown-label">SEGUNDOS</span>
+            </div>
+        </div>
+    </section>
+    <!--foto e historia-->
+    <div class="container">
+        <section id="INFO1" class="seccion">
+            <img src="img/foto1.png" alt="img1">
+            <div class="text1">
+                <h3>Nuestra Historia</h3>
+                <p>
+                    Hace 9 años comenzamos una amistad increíble, luego de 2 años nos hicimos novios. En el 2016 comenzamos nuestra linda historia. Llena de experiencias buenas y malas, todas con sus lecciones y aprendizajes que sin duda alguna han dado sus frutos y nos han ayudado a darle un buen camino a esta relación. Estamos felices de por fin anunciar nuestro matrimonio, con el que hemos soñado por tanto tiempo, y compartirlo con las personas que más queremos.
+                    <br>Estamos felices y listos para comenzar con nuestra pequeña familia, Los Contreras Mena. 
+                </p>
+            </div>
+        </section>
+    </div>
+    <!---agradecimientos-->
+    <div class="containerT">
+        <h1 class="ct1">Con la bendición de nuestros padres:</h1>
+    
+        <div class="names-container">
+          <div class="left-names">
+            <p class="pT">Carolina Beatriz Rodezno<br>Jorge Antonio Contreras</p>
+          </div>
+    
+          <div class="right-names">
+            <p class="pT">Sonia Elizabeth Fuentes<br>Oscar Alfredo Mena</p>
+          </div>
+        </div>
+    
+        <h2 class="ct2">y el acompañamiento de nuestros padrinos:</h2>
+        
+        <p class="centered-text">Eva Patricia Perez de Fuentes<br>René Edgar Fuentes</p>
+      </div>
+    <!--lugares-->
+    <div class="place">
+        <div class="locationChurch">
+            <div class="imgpa">
+                <div class="church"></div>
+                <p>Misa</p>
+            </div>
+            <div class="datos1">
+                <div class="ubicacion1">
+                    <div class="location"></div>
+                   <p class="textU1">Iglesia Casa de retiro Ayagualo</p>
+                </div>
+                <div class="Datetime1">
+                    <div class="time"></div>
+                    <p class="textT1">03:30 p.m.</p>
+                </div>
+                <a href="https://www.google.com/maps/place/13%C2%B037'37.3%22N+89%C2%B017'14.9%22W/@13.6270227,-89.2900505,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.6270227!4d-89.2874756?hl=es&entry=ttu" target="_blank"><button class="boton" ><div class="Lboton1" href="google.com">UBICACIÓN MISA</div></button></a>
+            </div>
+                
+        </div>
+        <div class="locationParty">
+        <div class="imgpa">
+            <div class="party"></div>
+            <p>Recepción</p>
+        </div>
+            <div class="datos2">
+                <div class="ubicacion2">
+                    <div class="location"></div>
+                   <p class="textU2">Playa San Diego</p>
+                </div>
+                <div class="Datetime2">
+                    <div class="time"></div>
+                    <p class="textT2">05:30 p.m.</p>
+                </div>
+                <a href="https://www.google.com/maps/place/13%C2%B028'56.6%22N+89%C2%B017'26.5%22W/@13.4823799,-89.2932777,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.4823799!4d-89.2907028?hl=es&entry=ttu" target="_blank"><button class="boton"><div class="Lboton2">UBICACIÓN RECEPCIÓN</div></button></a>
+            </div>
+        </div>
+    </div>
+    <!--Codigo de vestimenta-->
+    <div class="titleDC">DRESS CODE</div>
+    <section id="Dress-Code">
+            <div class="DCGirls">
+                <img src="img/dress.png" alt="">
+                <a href="https://www.pinterest.com/carmenmena2595/dress-code-ni%C3%B1as/?invite_code=bc3b5f12c882449da259011eac3126da&sender=611645330550879380" target="_blank"><button class="boton"><div class="tboton1">GIRLS</div></button></a>
+            </div>
+            <div class="DCBoys">
+                <img src="img/smoking.png" alt="">
+                <a href="https://www.pinterest.com/carmenmena2595/dress-code-hombres/?invite_code=11ceeaeea42c4a339345ba18fc7ff451&sender=611645330550879380" target="_blank"><button class="boton"><div class="tboton1">BOYS</div></button></a>
+            </div>
+    </section>
+    <!--asistencia-->
+    <section id="imagen2" class="seccion">
+        <div class="container">
+            <section id="INFO2" class="seccion">
+                <div class="text2">
+                    <h3>Confirmar asistencia</h3>
+                    <p>Confirmar tu asistencia antes del 15 de <br> noviembre. Si eres alérgico a algún tipo de <br> alimento, háznoslo saber.</p>
+                    <br>
+                    <a href="formulario.html"><button class="bt"><div class="boton3">RSVP</div></button></a>
+                </div>
+                <img src="img/foto2.png" alt="img2">
+            </section>
+        </div>
+    </section>
+    <footer>
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+    <div id="ultimo"></div>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+section#Dress-Code .DCT{
+    padding: 8px;
+    text-align: center;
+    width: 90%;
+}
+#Dress-Code table.DCT{
+    width: 700px;
+    margin: 100px auto;
+}
+#Dress-Code .DCText {    
+    font-weight: 400px;
+    align-items: center;
+    line-height: 54px;
+    text-align: center;
+    font-family: 'Playfair Display SC', italic;
+    font-size: 36px;
+    color: #587768;
+    font-weight:lighter;
+    display: block;
+    padding: 0px 0px;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+
+#Dress-Code table tr td.image-men {
+    margin: 100px 100px;
+}
+
+div.regla{
+    width: 29.6%;
+    background-color: red;
+}
+div.regla2{
+    width: 29.6%;
+    background-color: green;
+    float: right;
+}

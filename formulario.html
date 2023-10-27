@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Formulario de Confirmación de Asistencia</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Confirmación de Asistencia</h2>
+        <form id="confirmationForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Breve Descripción:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="contact">Número de Teléfono:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <div id="errorMessage" style="color: red;"></div> <!-- Mensaje de error -->
+
+            <button type="button" onclick="submitForm()">Confirmar Asistencia</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="min/script-min.js"></script>
+</body>
+</html>

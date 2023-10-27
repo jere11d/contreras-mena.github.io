@@ -1,0 +1,811 @@
+/* Importar la fuente */
+@font-face {
+    font-family: 'Font';
+    src: url('/font/PalaceScriptMT.ttf') format('ttf'),
+    url('/font/PALSCRI.TTF') format('TTF');
+    font-weight: normal; 
+    /* Puedes agregar más formatos de fuentes aquí (eot, svg, ttf) si es necesario */
+}
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+*{
+    overflow-x: hidden; /* Esto oculta el desplazamiento horizontal */
+}
+/* Estilos generales */
+body {
+    overflow-x: hidden; /* Esto oculta el desplazamiento horizontal */ 
+    margin:0 auto;
+    padding: 0;
+    background-color: #FAFAFA;
+    background-size: fixed;
+    background-position: center top;
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+}
+/* Encabezado */
+header {
+    margin-top: 118px;
+    
+}
+header h1.vW{
+    font-family: 'Pinyon Script', cursive;
+    color: #C08945;
+    text-align: center;
+    font-size: 85px;
+    font-weight: lighter;
+    white-space: pre-line;
+    margin-bottom: 0;
+}
+header h1.vCP{
+display: none;
+}
+/*img.names{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}*/
+header h3{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    color: #587768;
+    font-weight: lighter;
+    font-size: 24px;
+}
+/*Agradecimiento*/
+.containerT {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  
+ .containerT h1.ct1, h2.ct2, p.pT {
+    text-align: center;
+    display: block;
+  }
+ h1.ct1 ,h2.ct2{
+    font-family: 'Playfair Display SC', normal;
+    font-size: 28px;
+    color: #587768;
+    font-weight: 400 ;
+  }
+  p.pt{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #888886;
+  }
+  .names-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .left-names, .right-names {
+    width: 50%; /* Cambiado a 100% para que se apile en pantallas pequeñas */
+    margin-bottom: 10px; /* Añadido para separar los bloques en pantallas pequeñas */
+  }
+  
+  .centered-text {
+    text-align: center;
+    display: block;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #888886;
+  }
+  
+  
+/*end agradecimientos*/
+
+/* Secciones */
+.seccion {
+    padding: 2rem;
+    text-align: center;
+}
+div.star img{
+    margin-top: 12px;
+    width: 60px;    
+}   
+#inicio{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+#inicio h2{
+    font-family: 'Playfair Display', serif;
+    color: #B4A492;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: solid 1px #B4A492;
+} 
+p.dia{
+    font-family: 'Playfair Display SC', italic;
+    color: #587768;
+    font-size: 145%;
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+    
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+}
+.countdown {
+    display: flex;
+}
+
+.countdown-item {
+    margin: 0 8px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    background-color: #FAFAFA;
+    width: 100px;
+    height: 100px;
+}
+.countdown-number {
+    font-family: 'Playfair Display SC', italic;
+    display: block;
+    margin-top: 20%;
+    font-weight: bold;
+    color: #B98E59;
+    font-weight: lighter;
+
+}
+
+.countdown-label {
+    font-family: 'Poppins', sans-serif;
+    color: #7E808D;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: -15%;
+    margin-bottom: 20%;
+    font-weight: lighter;
+}
+div.container{
+    display: flex;
+    justify-content: center;
+}
+section#INFO1.seccion{
+    /*background-color: #333;*/
+    display: flex;
+    width: 80%;
+    align-items: center;}
+section#INFO1.seccion img{
+    width: 487px;
+    height: 669px;
+    top: 951px;
+    left: 185px ;
+    margin-left: 100px;
+}
+section#INFO2.seccion{
+    /*background-color: #333;*/
+    display: flex;
+    width: 100%;
+    align-items: center;}
+section#INFO2.seccion img{
+    width: 607.71px;
+    height: 421.69px;
+    top: 2756px;
+    left: 695px;
+    border-radius: 60px;
+}
+div.text1{
+    display: block;
+    text-align: justify;
+    width: 477px;
+    margin-left: 220px;
+    margin-bottom: 200px;
+}
+div.text1 h3{
+    font-family: 'Playfair Display SC', normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #587768;
+    text-align: right;
+}
+div.text1 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.2px;
+    text-align: justify;
+}
+div.text2{
+    display: block;
+    text-align: justify;
+    width: 477px;
+    height: 305px;
+    margin-left: 220px;
+    margin-bottom: 200px;
+}
+div.text2 h3{
+    font-family: 'Playfair Display SC', normal;
+    font-weight: 400;
+    line-height: 45px;
+    font-size: 30px;
+    text-align: left;
+    color: #587768;
+    font-weight: normal;
+    padding-right: 1px;
+}
+div.text2 p{
+    font-family: 'Poppins', normal;
+    font-weight: 400;
+    line-height: 20.8px; 
+    font-size: 17px;
+    color: #888886;
+    text-align: left;
+    align-items: left;    
+    padding-right: 50px;
+}
+
+td .time {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+
+}
+.time p{
+    font-family: 'Poppins', normal; 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #838591;
+    display: grid;
+    place-items: center; 
+}
+/*Ubicaciones y Fecha*/
+div.place{
+    width: 85%;
+    white-space: nowrap;
+    display: inline-flex;
+    /*background-color: #587768;*/
+    padding: auto;
+    /*Margenes*/
+    margin-top: 15px;
+    margin-left: 7.6%;
+    margin-bottom: 75px;
+}
+div.place a .boton{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif; 
+    width: Fixed (219px);
+    height: Hug (44px);
+    top: 1976px;
+    left: 222px;
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent; /* Fondo transparente */
+    color: #587768; /* Color del texto */
+    border: 1px solid #587768; /* Borde sólido */
+    border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+}
+.Lboton1 {
+    width: 133px;
+    height: 24px;
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+}
+.Lboton2 {
+    width: 184px;
+    height: 24px;
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+}
+/*Iglesia*/
+div.locationchurch{
+    white-space: nowrap;
+    /*background-color: rebeccapurple;*/
+    width: 30%;
+    /*Margenes*/
+    margin-left: 10%;
+    padding: 0 30px;
+}
+div.locationchurch .church,p{
+    display: inline-block;
+}
+div.imgch{
+    margin-bottom: 20px;
+}
+div.locationchurch img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.church{
+    display: flex;
+    margin: auto 3px;
+}
+    /*ubicacion1*/
+div.ubicacion1{
+    padding-bottom: 6px;
+    display: flex;
+}
+p.textU1{
+    width: 250px;
+    height: 18px;
+    /*tipografia*/
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #838591;
+    margin: 2px;
+
+}
+    /*fecha1*/
+div.datetime1{
+    padding-top: 6px;
+    display: flex;
+}
+p.textT1{
+    width: 100%;
+    height: 22px;
+    /*tipografia*/
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21.6px;
+    color: #838591;
+    margin: 2px;
+
+}
+/*Recepcion*/
+div.locationParty{
+    white-space: nowrap;
+    /*background-color: rebeccapurple;*/
+    width: 30%;
+    /*Margenes*/
+    margin-left: 10%;
+    padding: 0 10px;
+}
+div.imgpa {
+    display: flex;
+    margin-top: 0;
+}
+div.party{
+    display: flex;
+    margin: auto 1px;
+}
+div.imgpa p{
+    font-family: 'Pinyon Script', cursive;
+    color: #C08945;
+    font-size: 70px;
+    font-weight: lighter;
+    margin: 0;
+}
+    /*ubicacion2*/
+    div.ubicacion2{
+        padding-bottom: 6px;
+        display: flex;
+    }
+    p.textU2{
+        width: 165px;
+        height: 18px;
+        /*tipografia*/
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #838591;
+        margin: 2px;
+    
+    }
+        /*fecha1*/
+    div.datetime2{
+        padding-top: 6px;
+        display: flex;
+    }
+    p.textT2{
+        width: 100%;
+        height: 22px;
+        /*tipografia*/
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21.6px;
+        color: #838591;
+        margin: 2px;
+    
+    }
+/*Titulo DC*/
+div.TitleDC{
+    font-weight: 400px;
+    align-items: center;
+    line-height: 54px;
+    text-align: center;
+    font-family: 'Playfair Display SC', italic;
+    font-size: 36px;
+    color: #587768;
+    font-weight:lighter;
+    display: block;
+    padding: 0px 0px;
+    text-decoration: none;
+    width: 100%;
+}
+/*Dress Code*/
+section#Dress-Code{
+    /*  background-color: yellow;*/
+    width: 85%;
+    margin: auto;
+    margin-bottom: 12%;
+    display: flex;
+}
+/*Dress Code Girls*/
+div.DCGirls{
+    width: 12.5%;
+    /*background-color: aqua;*/
+    margin-left: 26%;
+    display: inline-grid;
+    text-align: center;
+}
+.DCGirls img{
+    width: 75px;
+    height: 90px;
+    top: 2343px;
+    left: 462px;
+    margin: 30% auto;
+}
+.DCGirls a .boton{
+    font-family: 'Poppins', sans-serif; 
+    width: 176px;
+    height: Hug (44px);
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent; /* Fondo transparente */
+    color: #587768; /* Color del texto */
+    border: 1px solid #587768; /* Borde sólido */
+    border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+}
+/*Dress Code Boys*/
+div.DCBoys{
+    width: 12.5%;
+    /*background-color: aqua;*/
+    margin-left: 23% ;
+    display: inline-grid;
+    text-align: center;
+}
+.DCBoys img{
+    width: 95px;
+    height: 90px;
+    margin: 30% auto;
+
+}
+.DCBoys a .boton{
+    font-family: 'Poppins', sans-serif; 
+    width: 176px;
+    height: Hug (44px);
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent; /* Fondo transparente */
+    color: #587768; /* Color del texto */
+    border: 1px solid #587768; /* Borde sólido */
+    border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+}
+a .bt{
+    width: 176px;
+    height:44px;
+    border-radius: 20px;
+    border: 1px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #587768;
+    color: white;
+    margin-top: 10%;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 1475px) {
+
+    section#INFO1.seccion{
+        /*background-color: #333;*/
+        display: flex;
+        width: 100%;
+        align-items: center;}
+  }
+@media screen and (max-width:1280px) {
+    section#INFO1.seccion img{
+        width: 467px;
+        height: 649px;
+        top: 931px;
+        left: 165px ;
+        margin-left: 80px;
+    }
+    section#INFO2.seccion img{
+        width: 587.71px;
+        height: 401.69px;
+        top: 2736px;
+        left: 675px;
+        border-radius: 40px;
+    }
+}
+@media  screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0%;
+    }
+    /*titulo*/
+    header h1.vW{
+        display: none;
+    }
+    /*agradecimientos*/
+    .containerT h1.ct1, h2.ct2, p.pT {
+        text-align: center;
+        display: block;
+      }
+      .names-container{
+        margin-bottom: 25px;
+      }
+    .containerT .ct1 ,h2.ct2{
+        font-size: 22px;
+        
+      }
+      p.pt{
+        font-size: 13px;
+      }
+      .left-names, .right-names {
+        width: 45%; /* Cambiado a 100% para que se apile en pantallas pequeñas */
+        margin:12px px; /* Añadido para separar los bloques en pantallas pequeñas */
+      }
+      .centered-text {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 12px;
+      }
+       /* end agradecimientos*/
+    body {
+        margin:0;
+        padding: 0;
+        background-image: url('img/background.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    header {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 150px;
+    }
+    img.names{
+        width: 82%;
+    }
+    header h1.vCP{
+        font-family: 'Pinyon Script', cursive;
+        color: #C08945;
+        text-align: center;
+        font-size: 73.5px;
+        font-weight: lighter;
+        white-space: pre-line;
+        margin-bottom: 0;
+        display: block;
+    }
+    header h3{
+        display: inline-block;
+        align-items: center;
+        width: 217px;
+        height: 27px;
+        top: 335px;
+        left: 72px;
+        margin-top: 10px;
+    }
+    header h3{
+        font-family: Playfair Display SC;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    section#INFO1.seccion{
+        /*background-color: #333;*/
+        display: block;
+        width: 80%;
+        align-items: center;}
+    section#INFO1.seccion img{
+        display: inline-block;    
+        width: 308px;
+        height: 430.08px;
+        top: 1026px;
+        left: 26px ;
+        margin: auto;
+    }
+    section#INFO1.seccion .text1{
+        display: inline-block;
+        width: 90%;
+        margin: auto;
+        text-align: left;
+    }
+    section#INFO1.seccion .text1 h3{
+        /*space
+        width: 148px;
+        height: 33px;
+        top: 1471px;
+        left: 186px;
+        Font*/
+        font-family: Playfair Display SC;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        margin: 0;
+        text-align: left;
+        }
+    section#INFO1.seccion .text1 p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20.4px;
+        text-align: Justified;
+        margin: auto;
+    }
+    /*Ubicaciones y Fecha*/
+div.place{
+    width: 100%;
+    display: grid;
+    /*background-color: #587768;*/
+    padding: auto;
+    /*Margenes*/
+    margin: 45px auto;
+}
+div.TitleDC{
+    font-weight: 400px;
+    line-height: 54px;
+    text-align: center;
+    font-family: 'Playfair Display SC', italic;
+    font-size: 36px;
+    color: #587768;
+    font-weight:lighter;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 75px;
+}
+/*Dress Code*/
+section#Dress-Code{
+    /*  background-color: yellow;*/
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+    section#info2.seccion{
+        display: block;
+    }
+    div .text2{
+        margin: auto;
+        width: 100%;
+    }
+    div.text2 h3{
+        font-size: 25px;
+    }
+    div.text2 p{
+        font-size: 14px;
+    }
+    div.text2 p br{
+        visibility: hidden;
+    }
+    section#INFO2.seccion img{
+        width: 302px;
+        height: 201px;
+        top: 3273px;
+        left: 26px;
+        border-radius: 30px;
+    }
+    /*Dress Code Girls*/
+div.DCGirls{
+    /*background-color: aqua;*/
+    display: grid;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.DCGirls img{
+    width: 75px;
+    height: 90px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15PX;
+}
+.DCGirls a .boton{
+    font-family: 'Poppins', sans-serif; 
+    width: 176px;
+    height: Hug (44px);
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent; /* Fondo transparente */
+    color: #587768; /* Color del texto */
+    border: 1px solid #587768; /* Borde sólido */
+    border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+}
+/*Dress Code Boys*/
+div.DCBoys{
+    /*background-color: aqua;*/
+    display: grid;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 25px;
+
+}
+.DCBoys img{
+    width: 95px;
+    margin: 15px auto;
+
+}
+.DCBoys a .boton{
+    font-family: 'Poppins', sans-serif; 
+    width: 176px;
+    height: Hug (44px);
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent; /* Fondo transparente */
+    color: #587768; /* Color del texto */
+    border: 1px solid #587768; /* Borde sólido */
+    border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+}
+/*iglesia*/
+div.locationchurch{
+    margin-left: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+p.textt1{
+    width: 100%;
+}
+div.ubicacion1{
+    display: inline-flex;
+}
+p.textU1{
+    width: 250px;
+    height: auto;
+    white-space: pre-line;
+}
+/*party*/
+div.locationparty{
+    margin-left: 0px;
+    width: 100%;
+    padding: 0 30px;
+}
+p.textT2{
+    width: 100%;
+}
+div.ubicacion2{
+    display: inline-flex;
+}
+p.textU2{
+    width: 250px;
+    height: auto;
+    white-space: pre-line;
+}
+div.text2 h3{
+    font-size: 22px;
+}
+
+}
+@media screen and (max-width:460px)
+{    
+    body {
+        margin:0;
+        padding: 0;
+        background-image: url('img/background.png');
+        background-size: 458px;
+        background-attachment:unset;
+        background-repeat:unset;
+    }
+    body {
+        overflow-x: hidden; /* Esto oculta el desplazamiento horizontal */
+      }
+      
+}
